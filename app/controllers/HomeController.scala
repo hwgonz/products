@@ -3,8 +3,8 @@ package controllers
 import javax.inject._
 import play.api._
 import play.api.mvc._
-import play.api.i18n.{I18nSupport, Messages, Lang}
-import play.api.i18n.Messages.Implicits._
+import play.api.i18n._
+
 
 
 /**
@@ -13,7 +13,7 @@ import play.api.i18n.Messages.Implicits._
  */
 
 @Singleton
-class HomeController @Inject()(val messages: Messages)(cc: ControllerComponents) extends AbstractController(cc) with I18nSupport {
+class HomeController @Inject()(cc: ControllerComponents, langs: Langs, messsagesApi: MessagesApi) extends AbstractController(cc) with I18nSupport {
 
   /**
    * Create an Action to render an HTML page.
@@ -22,7 +22,13 @@ class HomeController @Inject()(val messages: Messages)(cc: ControllerComponents)
    * will be called when the application receives a `GET` request with
    * a path of `/`.
    */
+
+  implicit val lang: Lang = langs.availables.head
+  /**
+  implicit val messagesProvider: MessagesProvider = MessagesImpl(lang, messagesApi)
+    **/
+
   def index() = Action { implicit request: Request[AnyContent] =>
-    Redirect(views.html.products.list(products))
+    Redirect(routes.ProductsController.list())
   }
 }

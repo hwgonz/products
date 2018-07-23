@@ -4,9 +4,9 @@
  * two arguments, a `String` for the title of the page and an `Html`
  * object to insert into the body of the page.
  *@
-@(products: List[Product])(implicit messages: Messages)
+@(products: List[Product])(implicit lang: Lang, messagesProvider: MessagesProvider)
 
-@main(messages("application.name")) {
+@main(Messages("application.name")) {
 <dl class="products">
     @for(product <- products) {
     <dt>@product.name</dt>
