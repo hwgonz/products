@@ -1,0 +1,5 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/hgonzalez/play-stuff/products/conf/logback.xml,/home/hgonzalez/play-stuff/products/target/scala-2.12/classes/logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/hgonzalez/play-stuff/products/conf/application.conf,/home/hgonzalez/play-stuff/products/target/scala-2.12/classes/application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/hgonzalez/play-stuff/products/conf/messages,/home/hgonzalez/play-stuff/products/target/scala-2.12/classes/messages)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/hgonzalez/play-stuff/products/conf/routes,/home/hgonzalez/play-stuff/products/target/scala-2.12/classes/routes)[0m
