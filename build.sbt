@@ -9,6 +9,7 @@ scalaVersion := "2.12.6"
 
 libraryDependencies += guice
 libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2" % Test
+libraryDependencies += "net.sf.barcode4j" % "barcode4j" % "2.0"
 
 // Adds additional packages into Twirl
 //TwirlKeys.templateImports += "tech.morma.controllers._"

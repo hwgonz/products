@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/hgonzalez/play-stuff/products/conf/routes
-// @DATE:Fri Jul 20 14:51:39 VET 2018
+// @DATE:Mon Jul 23 16:16:45 VET 2018
 
 
 package router {

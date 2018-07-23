@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/hgonzalez/play-stuff/products/conf/routes
-// @DATE:Fri Jul 20 14:51:39 VET 2018
+// @DATE:Mon Jul 23 16:16:45 VET 2018
 
 import play.api.mvc.Call
 
@@ -17,10 +17,28 @@ package controllers {
     }
 
   
+    // @LINE:11
+    def newProduct(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "products/new")
+    }
+  
+    // @LINE:17
+    def save(): Call = {
+      
+      Call("POST", _prefix + { _defaultPrefix } + "products")
+    }
+  
     // @LINE:9
     def list(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "products")
+    }
+  
+    // @LINE:13
+    def show(ean:Long): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "products/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("ean", ean)))
     }
   
   }
@@ -40,17 +58,32 @@ package controllers {
   
   }
 
-  // @LINE:12
+  // @LINE:22
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:12
+    // @LINE:22
     def versioned(file:Asset): Call = {
       implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public"))); _rrc
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[Asset]].unbind("file", file))
+    }
+  
+  }
+
+  // @LINE:15
+  class ReverseBarcodesController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:15
+    def barcode(ean:Long): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "barcode/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("ean", ean)))
     }
   
   }

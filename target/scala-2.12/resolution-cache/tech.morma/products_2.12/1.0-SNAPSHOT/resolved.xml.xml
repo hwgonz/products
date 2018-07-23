@@ -4,7 +4,7 @@
 		module="products_2.12"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20180720113901"
+		publication="20180723151131"
 	>
 		<description>
 		products
@@ -50,5 +50,6 @@
 		<dependency org="com.typesafe.play" name="play-akka-http-server_2.12" rev="2.6.16" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-guice_2.12" rev="2.6.16" conf="compile->default(compile)"/>
 		<dependency org="org.scalatestplus.play" name="scalatestplus-play_2.12" rev="3.1.2" conf="test->default(compile)"/>
+		<dependency org="net.sf.barcode4j" name="barcode4j" rev="2.0" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
