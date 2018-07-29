@@ -1,7 +1,7 @@
-[0m[[0m[33mwarn[0m] [0m[0m/home/hgonzalez/play-stuff/products/app/views/debug.scala.html:5:13: method current in object Play is deprecated (since 2.5.0): This is a static reference to application, use DI instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hwgonz/play-stuff/products/app/views/debug.scala.html:5:13: method current in object Play is deprecated (since 2.5.0): This is a static reference to application, use DI instead[0m
 [0m[[0m[33mwarn[0m] [0m[0m    user = @current.configuration.getString("environment.user"),[0m
 [0m[[0m[33mwarn[0m] [0m[0m            ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/hgonzalez/play-stuff/products/app/views/debug.scala.html:5:35: method getString in class Configuration is deprecated (since 2.6.0): Use get[String] or getAndValidate[String] with reference config entry[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hwgonz/play-stuff/products/app/views/debug.scala.html:5:35: method getString in class Configuration is deprecated (since 2.6.0): Use get[String] or getAndValidate[String] with reference config entry[0m
 [0m[[0m[33mwarn[0m] [0m[0m    user = @current.configuration.getString("environment.user"),[0m
 [0m[[0m[33mwarn[0m] [0m[0m                                  ^[0m
 [0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m

@@ -40,8 +40,8 @@ Seq[Any](format.raw/*2.1*/("""<img class="barcode" alt=""""),_display_(/*2.28*/e
 
               /*
                   -- GENERATED --
-                  DATE: Mon Jul 23 15:14:04 VET 2018
-                  SOURCE: /home/hgonzalez/play-stuff/products/app/views/tags/barcode.scala.html
+                  DATE: Sun Jul 29 11:33:37 VET 2018
+                  SOURCE: /home/hwgonz/play-stuff/products/app/views/tags/barcode.scala.html
                   HASH: f79d4a2ec91731d9a8b4a2bea8494e541df1df5f
                   MATRIX: 734->1|839->13|892->40|915->43|949->51|963->57|1015->89
                   LINES: 21->1|26->2|26->2|26->2|26->2|26->2|26->2

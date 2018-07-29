@@ -44,8 +44,8 @@ Seq[Any](format.raw/*3.1*/("""<footer>
 
               /*
                   -- GENERATED --
-                  DATE: Mon Jul 23 14:33:02 VET 2018
-                  SOURCE: /home/hgonzalez/play-stuff/products/app/views/debug.scala.html
+                  DATE: Sun Jul 29 11:33:37 VET 2018
+                  SOURCE: /home/hwgonz/play-stuff/products/app/views/debug.scala.html
                   HASH: 68a300b099c11113d7e3d876f55d3f03cac6f0d5
                   MATRIX: 727->1|823->26|880->55|927->76|939->80|964->85|1004->99|1019->106|1083->150|1123->164|1192->213|1219->214
                   LINES: 21->1|24->2|27->3|28->4|28->4|28->4|29->5|29->5|29->5|30->6|30->6|31->7

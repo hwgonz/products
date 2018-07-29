@@ -14,6 +14,7 @@ GET     /products/:ean              controllers.ProductsController.show(ean: Lon
 
 GET     /barcode/:ean               controllers.BarcodesController.barcode(ean: Long)
 
++nocsrf
 POST    /products                   controllers.ProductsController.save
 
 

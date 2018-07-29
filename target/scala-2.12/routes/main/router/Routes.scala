@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/hgonzalez/play-stuff/products/conf/routes
-// @DATE:Mon Jul 23 16:16:45 VET 2018
+// @SOURCE:/home/hwgonz/play-stuff/products/conf/routes
+// @DATE:Sun Jul 29 11:34:45 VET 2018
 
 package router
 
@@ -19,7 +19,7 @@ class Routes(
   ProductsController_2: controllers.ProductsController,
   // @LINE:15
   BarcodesController_3: controllers.BarcodesController,
-  // @LINE:22
+  // @LINE:23
   Assets_1: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -32,7 +32,7 @@ class Routes(
     ProductsController_2: controllers.ProductsController,
     // @LINE:15
     BarcodesController_3: controllers.BarcodesController,
-    // @LINE:22
+    // @LINE:23
     Assets_1: controllers.Assets
   ) = this(errorHandler, HomeController_0, ProductsController_2, BarcodesController_3, Assets_1, "/")
 
@@ -150,7 +150,7 @@ class Routes(
     )
   )
 
-  // @LINE:17
+  // @LINE:18
   private[this] lazy val controllers_ProductsController_save5_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("products")))
   )
@@ -164,11 +164,11 @@ class Routes(
       "POST",
       this.prefix + """products""",
       """""",
-      Seq()
+      Seq("""nocsrf""")
     )
   )
 
-  // @LINE:22
+  // @LINE:23
   private[this] lazy val controllers_Assets_versioned6_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
@@ -219,13 +219,13 @@ class Routes(
         controllers_BarcodesController_barcode4_invoker.call(BarcodesController_3.barcode(ean))
       }
   
-    // @LINE:17
+    // @LINE:18
     case controllers_ProductsController_save5_route(params@_) =>
       call { 
         controllers_ProductsController_save5_invoker.call(ProductsController_2.save)
       }
   
-    // @LINE:22
+    // @LINE:23
     case controllers_Assets_versioned6_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
         controllers_Assets_versioned6_invoker.call(Assets_1.versioned(path, file))

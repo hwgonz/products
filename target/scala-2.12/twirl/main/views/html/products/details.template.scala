@@ -53,8 +53,8 @@ Seq[Any](_display_(/*2.2*/main(Messages("products.details", product.name))/*2.50
 
               /*
                   -- GENERATED --
-                  DATE: Mon Jul 23 16:16:45 VET 2018
-                  SOURCE: /home/hgonzalez/play-stuff/products/app/views/products/details.scala.html
+                  DATE: Sun Jul 29 11:33:37 VET 2018
+                  SOURCE: /home/hwgonz/play-stuff/products/app/views/products/details.scala.html
                   HASH: 599bd5a526abd2269ae0a49f32b7cb490e260856
                   MATRIX: 769->1|952->92|1008->140|1047->142|1074->143|1109->153|1121->157|1162->178|1193->184|1255->226|1282->227|1350->269|1385->284|1427->300|1442->307|1466->311|1508->326|1545->342|1588->358|1604->365|1630->370|1672->385|1716->408|1759->424|1775->431|1808->443|1851->456
                   LINES: 21->1|26->2|26->2|26->2|27->3|28->4|28->4|28->4|29->5|29->5|30->6|32->8|32->8|33->9|33->9|33->9|34->10|34->10|35->11|35->11|35->11|36->12|36->12|37->13|37->13|37->13|39->15
