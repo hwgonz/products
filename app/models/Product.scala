@@ -1,5 +1,9 @@
 package models
 
+import anorm.SQL
+import anorm.SqlQuery
+
+
 case class Product(ean: Long, name: String, description: String)
 
 object Product {
@@ -16,6 +20,8 @@ object Product {
       "Zebra Length 28mm Assorted 150 Pack")
   )
 
+  val sql: SqlQuery = SQL("select * from products order by name asc")
+
   def findAll = products.toList.sortBy(_.ean)
 
   def findByEan(ean: Long) = products.find(_.ean == ean)
@@ -25,3 +31,11 @@ object Product {
   }
 
 }
+
+case class Warehouse(id: Long, name: String)
+
+case class StockItem(
+                      id: Long,
+                      productId: Long,
+                      warehouseId: Long,
+                      quantity: Long)

@@ -4,5 +4,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	(/home/hwgonz/play-stuff/products/conf/routes,/home/hwgonz/play-stuff/products/target/scala-2.12/classes/routes)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	(/home/hwgonz/play-stuff/products/conf/application.conf,/home/hwgonz/play-stuff/products/target/scala-2.12/classes/application.conf)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	(/home/hwgonz/play-stuff/products/conf/messages,/home/hwgonz/play-stuff/products/target/scala-2.12/classes/messages)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/hwgonz/play-stuff/products/conf/evolutions,/home/hwgonz/play-stuff/products/target/scala-2.12/classes/evolutions)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/hwgonz/play-stuff/products/conf/evolutions/default,/home/hwgonz/play-stuff/products/target/scala-2.12/classes/evolutions/default)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/hwgonz/play-stuff/products/conf/evolutions/default/1.sql,/home/hwgonz/play-stuff/products/target/scala-2.12/classes/evolutions/default/1.sql)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	(/home/hwgonz/play-stuff/products/conf/messages.fr,/home/hwgonz/play-stuff/products/target/scala-2.12/classes/messages.fr)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	(/home/hwgonz/play-stuff/products/conf/logback.xml,/home/hwgonz/play-stuff/products/target/scala-2.12/classes/logback.xml)[0m
